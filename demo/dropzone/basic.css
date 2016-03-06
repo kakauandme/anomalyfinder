@@ -1,0 +1,138 @@
+/*
+ * The MIT License
+ * Copyright (c) 2012 Matias Meno <m@tias.me>
+ */
+
+
+body{
+  font-family: -apple-system, 'Helvetica Neue', 'Lucida Grande', sans-serif;
+  margin: 0;
+  line-height: 1.5;
+  text-align: center;
+ /* background-color: #24292e;
+  color: white ;*/
+  font-weight: 300;
+    font-size: 20px;
+
+
+}
+
+body.viz{
+  color: white;
+  background-size: cover;
+
+}
+
+body > section {
+  max-width: 75%;
+  width: 75%;
+  display: inline-block;
+  text-align: left;
+
+
+
+}
+
+
+.btn{
+  margin-top: 2em;
+}
+h1{
+  font-size: 4em;
+  font-weight: 100;
+}
+h1.title{
+  position: absolute;
+  left: 12.5%;
+  z-index: 100000;
+  padding: 0;
+  width: 100%;
+  text-align: left;
+
+}
+
+
+img{
+  border-radius: 5px;
+}
+
+div.intro{
+
+  position: absolute;
+  bottom: 4em;
+  right: 12.5%;
+  text-align: left;
+   z-index: 100000; 
+
+}
+.intro ul
+{
+
+    padding: 0em;
+    list-style-type: none;
+}
+body.viz ul{
+  color: white;
+}
+
+
+.dropzone, .dropzone * {
+  box-sizing: border-box; }
+
+.dropzone {
+  //background-color: #24292e;
+  position: relative; }
+  .dropzone .dz-preview {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    margin: 0.5em; }
+    .dropzone .dz-preview .dz-progress {
+      display: block;
+      height: 15px;
+      border: 1px solid #aaa; }
+      .dropzone .dz-preview .dz-progress .dz-upload {
+        display: block;
+        height: 100%;
+        width: 0;
+        background: green; }
+    .dropzone .dz-preview .dz-error-message {
+      color: red;
+      display: none; }
+    .dropzone .dz-preview.dz-error .dz-error-message, .dropzone .dz-preview.dz-error .dz-error-mark {
+      display: block; }
+    .dropzone .dz-preview.dz-success .dz-success-mark {
+      display: block; }
+    .dropzone .dz-preview .dz-error-mark, .dropzone .dz-preview .dz-success-mark {
+      position: absolute;
+      display: none;
+      left: 30px;
+      top: 30px;
+      width: 54px;
+      height: 58px;
+      left: 50%;
+      margin-left: -27px; }
+
+
+
+
+#dropzone {
+    margin-bottom: 3rem;
+}
+
+.dropzone {
+    border: 2px dashed #0087F7;
+    border-radius: 5px;
+    
+}
+
+.dropzone .dz-message {
+    font-weight: 400;
+}
+
+.dropzone .dz-message .note {
+    font-size: 0.8em;
+    font-weight: 200;
+    display: block;
+    margin-top: 1.4rem;
+}
