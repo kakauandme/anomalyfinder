@@ -1,6 +1,6 @@
 # Data preparation - Science Hack Fest entry
 
-`hackfest_get_erai_data.ipynb` - function written by Peter Isaac that collects hourly meteorological data for the selected year. Data is saved as netcdf file with name being [year]_[longitude index]_[latitude index]
+`hackfest_get_erai_data.ipynb` - function written by Peter Isaac that collects hourly meteorological data for the selected year. Data is saved as netcdf file with name being [year]\_[longitude index]\_[latitude index]
 where longitude and latitude indices are calculated as following: 
 
 ```
