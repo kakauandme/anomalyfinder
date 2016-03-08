@@ -1,0 +1,12 @@
+jupyter
+csv
+datetime
+dateutil.parser
+matplotlib.pyplot as plt
+netCDF4
+numpy
+os
+pandas
+pytz
+pysolar
+scipy
