@@ -17,6 +17,7 @@ where latitude[0] and longitude[0] are coordinates of the top left corner of the
 `filter_data.ipynb` - selects fires with intensity over 50 and saves the locations to the csv file
 We use fires with intensity over 50 in order to shrink our dataset and make it run faster
 
+`NCtoCSV.ipynb` - converts nc data to a long scv format
 
 ### Instalation
 
