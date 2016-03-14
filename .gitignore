@@ -1,12 +1,29 @@
 
 .ipynb_checkpoints
 
-data.js
 
-*.csv
+data/hotspot_2014.csv
 
-*.kml
+data/hotspot_2015.csv
 
-*.nc
+data/fsd.csv
 
-*.ods
+data/nodub/fsd.csv
+
+data/full_data.csv
+
+data/hotspot_2015_power50.csv
+
+data/rh.csv
+
+data/rh.csv
+
+data/ws.csv
+
+data/wd.csv
+
+data/ta.csv
+
+data/precip.csv
+
+data/hotspot.csv
