@@ -24,71 +24,43 @@
     <script>
 
       stylers = [
-  {
-    "stylers": [
-      { "saturation": -100 },
-      { "visibility": "simplified" }
-    ]
-  }
-  //,
-  // {
-  //   "elementType": "labels",
-  //   "stylers": [
-  //     { "visibility": "off" }
-  //   ]
-  // },
-  // {
-  //   "featureType": "landscape.natural.terrain",
-  //   "stylers": [
-  //     { "visibility": "off" }
-  //   ]
-  // },
-  // {
-  //   "featureType": "water",
-  //   "stylers": [
-  //     { "color": "#1a75cf" }
-  //   ]
-  // },
-  // {
-  //   "featureType": "administrative.locality",
-  //   "elementType": "labels.text",
-  //   "stylers": [
-  //     { "visibility": "on" }
-  //   ]
-  // }
-];
+          {
+            "stylers": [
+              { "saturation": -100 },
+              { "visibility": "simplified" }
+            ]
+          }
+          
+      ];
 
-      // This example requires the Visualization library. Include the libraries=visualization
-      // parameter when you first load the API. For example:
-      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=visualization">
-
+    
       var map, heatmap;
 
       
-function addAnomaly(i) {
+      function addAnomaly(i) {
 
-  var image = {
-    url:  "icon.png",
-    // This marker is 20 pixels wide by 32 pixels high.
-    size: new google.maps.Size(120, 120),
-    // The origin for this image is (0, 0).
-    origin: new google.maps.Point(0, 0),
-    scaledSize: new google.maps.Size(30, 30),
-    // The anchor for this image is the base of the flagpole at (0, 32).
-    anchor: new google.maps.Point(15, 15)
-  };
+        var image = {
+          url:  "icon.png",
+          // This marker is 20 pixels wide by 32 pixels high.
+          size: new google.maps.Size(120, 120),
+          // The origin for this image is (0, 0).
+          origin: new google.maps.Point(0, 0),
+          scaledSize: new google.maps.Size(30, 30),
+          // The anchor for this image is the base of the flagpole at (0, 32).
+          anchor: new google.maps.Point(15, 15)
+        };
 
-  setTimeout(function() { 
-     var marker1 = new google.maps.Marker({
-              position: new google.maps.LatLng(data[i].latitude, data[i].longitude),
-              map: map,
-              title: 'ta: ' + data[i].ta + '\n' + 'wd: ' + data[i].wd + '\n' +'ws: ' + data[i].ws + '\n' +'rh: ' + data[i].rh + '\n' +'fsd: ' + data[i].fsd,
-              icon: image
+            setTimeout(function() { 
+               var marker1 = new google.maps.Marker({
+                        position: new google.maps.LatLng(data[i].latitude, data[i].longitude),
+                        map: map,
+                        title: 'ta: ' + data[i].ta + '\n' + 'wd: ' + data[i].wd + '\n' +'ws: ' + data[i].ws + '\n' +'rh: ' + data[i].rh + '\n' +'fsd: ' + data[i].fsd,
+                        icon: image
 
-            });
-    
-  }, Math.floor(Math.random() * 5000) + 1000  );
-}
+                      });
+              
+            }, Math.floor(Math.random() * 5000) + 1000  );
+          }
 
        
      
@@ -110,14 +82,9 @@ function addAnomaly(i) {
 
 
       }
-
-    
-      // Heatmap data: 500 Points
+      
       function getPoints() {
-        //console.log(data);
-
-         
-
+     
         var heatMapData = [];
 
         for (var i = data.length - 1; i >= 0; i--) {
@@ -132,8 +99,7 @@ function addAnomaly(i) {
     </script>
     
     <script type="text/javascript" src="../website_data.js"></script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI6pqjx_rXOl3m7nQecEv0Kj-h46w6LFM&libraries=visualization&callback=initMap">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI6pqjx_rXOl3m7nQecEv0Kj-h46w6LFM&libraries=visualization&callback=initMap">
     </script>
     
   </body>
