@@ -1,7 +1,7 @@
 # anomalyfinder - Science Hack Fest entry
 A tool that finds anomalies in the data and plots them on the map to encourage further investigation for the causes of each anomaly.
 
-Demo: [Map of bishfires in Australia](https://db.tt/AG7YF4M5)
+Demo: [Map of bushfires in Australia](https://db.tt/AG7YF4M5)
 
 `process data.ipynb` - combines data from the file with locations of the events of interest with the covariates from different files within the specified radius and within specified time window
 
