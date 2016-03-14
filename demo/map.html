@@ -65,7 +65,7 @@
       var map, heatmap;
 
       
-function doSetTimeout(i) {
+function addAnomaly(i) {
 
   var image = {
     url:  "icon.png",
@@ -82,7 +82,7 @@ function doSetTimeout(i) {
      var marker1 = new google.maps.Marker({
               position: new google.maps.LatLng(data[i].latitude, data[i].longitude),
               map: map,
-              title: 'Power: ' + data[i].power ,
+              title: 'ta: ' + data[i].ta + '\n' + 'wd: ' + data[i].wd + '\n' +'ws: ' + data[i].ws + '\n' +'rh: ' + data[i].rh + '\n' +'fsd: ' + data[i].fsd,
               icon: image
 
             });
@@ -109,13 +109,6 @@ function doSetTimeout(i) {
         });
 
 
-          // var marker1 = new google.maps.Marker({
-          //     position: new google.maps.LatLng(data[0].latitude, data[0].longitude),
-          //     map: map,
-          //     title: '💥',
-          //     icon: image
-
-          // });
       }
 
     
@@ -128,17 +121,17 @@ function doSetTimeout(i) {
         var heatMapData = [];
 
         for (var i = data.length - 1; i >= 0; i--) {
-          heatMapData.push({location: new google.maps.LatLng(data[i].latitude, data[i].longitude), weight: data[i].power});
+          heatMapData.push({location: new google.maps.LatLng(data[i].latitude, data[i].longitude), weight: data[i].ta});
 
-          if(i%2000 === 0){
-           doSetTimeout(i);
+          if(data[i].outlier == 1){
+            addAnomaly(i);
           }
         }
         return heatMapData;
       }
     </script>
     
-    <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript" src="../website_data.js"></script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI6pqjx_rXOl3m7nQecEv0Kj-h46w6LFM&libraries=visualization&callback=initMap">
     </script>
