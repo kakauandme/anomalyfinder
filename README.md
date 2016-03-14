@@ -3,11 +3,11 @@ A tool that finds anomalies in the data and plots them on the map to encourage f
 
 Demo: [Map of bushfires in Australia](https://db.tt/AG7YF4M5)
 
-`process data.ipynb` - combines data from the file with locations of the events of interest with the covariates from different files within the specified radius and within specified time window
+`process data.ipynb` - combines data from the file with locations of the events of interest with the covariates from different files within the specified radius and within specified time window.
 
-`anomaly_detection.ipynb` - Reads a csv file of locations of the evens of interest with the relevant covariates 
+`anomaly_detection.ipynb` - Reads a csv file of locations of the evens of interest with the relevant covariates and finds outstanding entries.
 
-`CSV to KML & JSON.ipynb` - converts longitude and latitude data to klm and json format for visualisation  
+`CSV to KML & JSON.ipynb` - converts longitude and latitude data to klm and json format for visualisation.
 
 
 
