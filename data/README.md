@@ -1,5 +1,7 @@
 # Data
 
+`nodub` - folder with cleaned up datasets
+
 `hotspot.csv` - data from hotspot of file locations in 2015
 
 `hotspot2015.csv` - data from hotspot of file locations in 2015
