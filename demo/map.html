@@ -23,16 +23,18 @@
 		}
 		.title{
 			position: absolute;
-			left: 1em;
+			left: 0;
 			z-index: 100000;
 			width: 25%;
+			padding: 2em 1em 3em;
+			background-color: rgba(255,255,255, 0.5);
 		}
 		h1{
 			
 			font-weight: 100;
 			font-size: 3em;
-			
-			
+			word-break: break-all;
+			margin-top: 0;
 
 		}
 		#map {
@@ -47,7 +49,7 @@
 		<h1 >#anomalyfinder</h1>
 		<h3>Visualisation of bushfires in Australia during 2015.</h3>
 		<p>Fires that appeared under unusual circumstances are marked with an 💥.
-		<br /><strong>Science Hack Fest</strong> entry by  <a href="https://twitter.com/KaKaUandME" title="Kirill Kliavin on Twitter" target="_blank">@kakauandme</a> and <a href="https://twitter.com/thekoshkina" title="Vira Koshkina on Twitter" target="_blank">@thekoshkina</a>. Special thanks to Peter Isaac.
+		<br /><strong>Science Hack Fest</strong> entry by  <a href="https://twitter.com/KaKaUandME" title="Kirill Kliavin on Twitter" target="_blank">@kakauandme</a> and <a href="https://twitter.com/thekoshkina" title="Vira Koshkina on Twitter" target="_blank">@thekoshkina</a>. Special thanks to Peter Isaac for supervision and help.
 		</p>
 	</div>
 	<div id="map"></div>
@@ -56,10 +58,15 @@
 		stylers = [
 		{
 			"stylers": [
-			{ "saturation": -100 },
+			{ "saturation": -100},
 			{ "visibility": "simplified" }
 			]
-		}
+		},{
+		    "featureType": "water",
+		    "stylers": [
+		      { "color": "#ffffff" }
+		    ]
+		  }
 
 		];
 
